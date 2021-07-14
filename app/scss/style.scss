@@ -1,3 +1,6 @@
+@import'_vars';
+@import'_global';
+@import'_fonts';
 html {
     box-sizing: border-box;
 }
@@ -7,3 +10,197 @@ html {
 *::before {
     box-sizing: inherit;
 }
+
+.main__menu {
+    display: inline-block;
+}
+
+.main__menu-link {
+    display: inline-block;
+    a {
+        color: #fff;
+    }
+}
+
+.main {
+    display: flex;
+    /* min-height: 100%; */
+    .sidebar {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        min-height: 100%;
+        max-width: 64px;
+        width: 100%;
+        padding: 32px 8px 16px;
+        background-color: #151b1f;
+        button {
+            background-color: transparent;
+            outline: none;
+            border: none;
+            cursor: pointer;
+        }
+        .sidebar__line {
+            position: relative;
+            span {
+                height: 3px;
+                width: 27px;
+                background-color: #fff;
+                display: block;
+                border-radius: 1px;
+                display: block;
+                &+span {
+                    margin-top: 5px;
+                }
+            }
+        }
+    }
+}
+
+.sidebar__lang {
+    position: relative;
+    width: 48px;
+    height: 48px;
+    &:hover {
+        transition: all .3s;
+        border-radius: 50%;
+        border: 1px solid #EEEEEE;
+        span {
+            color: #fff;
+        }
+    }
+    &:active {
+        span {
+            color: $green;
+        }
+    }
+    span {
+        color: $green;
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.main__content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main__info {
+    background-color: #fff;
+    width: 50%;
+    flex-shrink: 0;
+}
+
+.main__info-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .main__header-logo {
+        @include f700;
+        font-size: 32px;
+        line-height: 37px;
+        color: $green;
+    }
+    .main__header-city {
+        @include f400;
+        font-size: 14px;
+        line-height: 16px;
+        color: $grey;
+        position: relative;
+        padding: 3px 0 3px 24px;
+        &::before {
+            content: "";
+            position: absolute;
+            width: 18px;
+            height: 20px;
+            left: 0px;
+            top: 0;
+            background-image: url(../img/map.svg);
+        }
+    }
+}
+
+.main__info-middle {
+    padding: 163px 0;
+    max-width: 560px;
+    .main__info-section {
+        .main__info-title {
+            @include f700;
+            font-size: 70px;
+            line-height: 66px;
+            color: $black;
+            margin-bottom: 34px;
+            span {
+                color: $green;
+            }
+        }
+        .main__info-text {
+            @include f300;
+            font-size: 26px;
+            line-height: 30px;
+            color: $grey;
+            margin-bottom: 60px;
+        }
+    }
+}
+
+.main__info-btn {
+    width: 250px;
+    height: 48px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background: linear-gradient(90deg, #0EC261 2.61%, #039F67 112.6%);
+    background-blend-mode: darken;
+    border-radius: 8px;
+    &:hover {
+        background: linear-gradient(90deg, #0B934A 2.61%, #026E47 112.6%);
+        background-blend-mode: darken;
+    }
+    &:active {
+        background: linear-gradient(90deg, #076432 2.61%, #013C27 112.6%);
+        background-blend-mode: darken;
+        transition: all .3s;
+    }
+    span {
+        font-size: 18px;
+        line-height: 21px;
+        text-align: center;
+        color: #fff;
+        @include f500;
+    }
+}
+
+.main__info-footer {
+    display: flex;
+    justify-content: space-between;
+    .main__footer-year {
+        font-size: 13px;
+        line-height: 15px;
+        color: $grey;
+    }
+    .main__footer-tel {
+        font-size: 13px;
+        line-height: 15px;
+        color: $black;
+    }
+}
+
+.main__slider {
+    min-width: 100%
+}
+
+.main__slider-info {}
+
+.main__slider-title {}
+
+.main__slider-text {}
+
+.main__slider-btn {}
+
+@import'_media';
