@@ -1,0 +1,149 @@
+@media(max-width:1024px) {
+    .container {
+        padding: 32px 32px;
+    }
+    .main {
+        justify-content: space-between;
+    }
+    /* 
+    .main__info {
+        width: 520px;
+    } */
+    .wrapper__container {
+        padding: 32px 64px;
+    }
+    .main__slider-title {
+        font-size: 32px;
+        line-height: 37px;
+    }
+    .main__slider-text {
+        font-size: 22px;
+    }
+    .main__menu .main__menu-content {
+        height: 100%;
+        width: 55%
+    }
+}
+
+@media(max-width:900px) {
+    .main__info {
+        width: 400px;
+    }
+    .main__menu .main__menu-content {
+        width: 60%
+    }
+}
+
+@media(max-width:770px) {
+    .main__info {
+        width: 100%;
+    }
+    .main__menu .main__menu-content {
+        width: 100%
+    }
+    .main__menu .main__menu-content .main__menu-link {
+        top: 15%;
+        margin-left: 30px;
+    }
+    .main-menu__lang {
+        display: block;
+        position: absolute;
+        bottom: 28px;
+        left: 28px;
+    }
+}
+
+@media(max-width:600px) {
+    .main__info-middle .main__info-section .main__info-title {
+        font-size: 36px;
+        line-height: 40px;
+        margin-bottom: 20px;
+    }
+    .main .side-menu {
+        display: none;
+    }
+    .media-menu__line {
+        display: block;
+    }
+    .media__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .media-menu__line {
+        position: relative;
+        outline: none;
+        border: none;
+        background-color: #fff;
+        margin-top: -30px;
+        span {
+            height: 3px;
+            width: 27px;
+            background-color: #000;
+            display: block;
+            border-radius: 1px;
+            display: block;
+            &+span {
+                margin-top: 5px;
+            }
+        }
+    }
+    .main__info-header {
+        align-items: flex-end;
+        flex-direction: column;
+    }
+    .main__info-header .main__header-city {
+        margin-top: 8px;
+    }
+    .main__info-middle {
+        padding: 33px 0;
+    }
+    .main__info-middle .main__info-section .main__info-text {
+        font-size: 18px;
+        line-height: 21px;
+        margin-bottom: 30px;
+    }
+    .main__info-middle .main__info-section .main__info-title {
+        font-size: 32px;
+        line-height: 100%;
+    }
+    .container {
+        padding: 16px;
+    }
+    .main__info-header .main__header-logo {
+        font-size: 30px;
+        line-height: 35px;
+    }
+    .main__info-btn {
+        width: calc(100% + 32px);
+        margin-left: -16px;
+        border-radius: 0px;
+    }
+    .main__menu .main__menu-content .main__menu-link a {
+        font-size: 28px;
+        line-height: 32px;
+    }
+    .main__menu .main__menu-content .main__menu-link .main__menu-social {
+        top: 23%;
+    }
+    .main__info-footer {
+        margin: -16px;
+        height: 72px;
+        background-color: #000;
+        justify-content: center;
+        flex-direction: column-reverse;
+        align-items: flex-end;
+    }
+    .main__info-footer {
+        padding: 16px;
+        .main__footer-tel {
+            font-size: 13px;
+            line-height: 15px;
+            color: $green;
+            margin-bottom: 8px;
+        }
+        .main__footer-year {
+            color: #eee;
+        }
+    }
+}

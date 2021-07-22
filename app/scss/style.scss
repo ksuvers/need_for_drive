@@ -16,9 +16,18 @@ html {
     height: 100vh;
 }
 
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 32px 64px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+}
+
 .main {
     display: flex;
-    /* min-height: 100%; */
     .side-menu {
         display: flex;
         flex-direction: column;
@@ -68,7 +77,7 @@ html {
     display: none;
     .main__menu-content {
         height: 100%;
-        width: 50.5%;
+        width: calc(48% + 33.28px);
         z-index: 5;
         position: absolute;
         top: 0;
@@ -83,7 +92,7 @@ html {
             position: absolute;
             margin-bottom: 44px;
             top: 35%;
-            margin-left: 45px;
+            margin-left: 97px;
             left: 0;
             li+li {
                 margin-top: 10px;
@@ -114,9 +123,11 @@ html {
             }
         }
         .main__btn {
-            margin-left: 24px;
-            margin-top: 40px;
+            position: absolute;
             cursor: pointer;
+            display: inline;
+            left: 25px;
+            top: 40px;
             &:active {
                 .side-menu__line {
                     pointer-events: none
@@ -135,6 +146,10 @@ html {
         right: 0;
         content: "";
     }
+}
+
+.media-menu__line {
+    display: none;
 }
 
 .side-menu__lang {
@@ -162,6 +177,10 @@ html {
         left: 50%;
         transform: translate(-50%, -50%);
     }
+}
+
+.main-menu__lang {
+    display: none;
 }
 
 .main__content {
@@ -208,6 +227,7 @@ html {
 .main__info-middle {
     padding: 163px 0;
     max-width: 560px;
+    flex-grow: 1;
     .main__info-section {
         .main__info-title {
             @include f700;
@@ -260,7 +280,6 @@ html {
 .main__info-footer {
     display: flex;
     justify-content: space-between;
-    margin-top: 30%;
     .main__footer-year {
         font-size: 13px;
         line-height: 15px;
@@ -296,6 +315,13 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
 
 .main__slider-items {
     position: relative;
+}
+
+.main .side-menu .side-menu__line {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .main__slider-item {
