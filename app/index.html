@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="">
 
 <head>
     <meta charset="UTF-8">
@@ -23,9 +23,13 @@
                     <span></span>
                     <span></span>
                 </button>
-
-                <div class="side-menu__lang">
-                    <span>Eng</span>
+                <div class="header__lang">
+                    <div class="side-menu__lang lang-eng" id="en">
+                        <span>Eng</span>
+                    </div>
+                    <div class="side-menu__lang lang-ru" id="ru">
+                        <span>Рус</span>
+                    </div>
                 </div>
             </div>
 
@@ -39,11 +43,10 @@
                                 <span></span>
                             </button>
                             <div class="main__info-header">
-                                <div class="main__header-logo">
-                                    Need for drive
-                                </div>
+                                <div class="main__header-logo ">
+                                    Need for drive</div>
 
-                                <div class="main__header-city">
+                                <div class="main__header-city ">
                                     Ульяновск
                                 </div>
                             </div>
@@ -52,11 +55,11 @@
 
                         <div class="main__info-middle">
                             <div class="main__info-section">
-                                <div class="main__info-title">Каршеринг <br>
-                                    <span>Need for drive</span> </div>
-                                <div class="main__info-text">Поминутная аренда авто твоего города</div>
+                                <div class="main__info-title lang" key="cardsharing">Каршеринг <br>
+                                    <span class=" lang" key="need">Need for drive</span> </div>
+                                <div class="main__info-text lang" key="rental">Поминутная аренда авто твоего города</div>
                             </div>
-                            <button class="main__info-btn"><span>
+                            <button class="main__info-btn lang" key="booking"><span>
                             Забронировать</span></button>
                         </div>
                         <div class="main__info-footer">
@@ -72,40 +75,40 @@
                         <div class="main__slider-item swiper-slide" style="background-image: url(/img/slider-1.jpg);">
                             <div class="wrapper__container">
                                 <div class="main__slider-info">
-                                    <div class="main__slider-title">Бесплатная парковка</div>
-                                    <div class="main__slider-text">Оставляйте машину на платных городских парковках и разрешенных местах, не нарушая ПДД, а также в аэропортах.</div>
+                                    <div class="main__slider-title lang" key="parking">Бесплатная парковка</div>
+                                    <div class="main__slider-text lang" key="leave">Оставляйте машину на платных городских парковках и разрешенных местах, не нарушая ПДД, а также в аэропортах.</div>
                                 </div>
-                                <button class="main__slider-btn color__btn-1"><span> Подробнее</span></button>
+                                <button class="main__slider-btn color__btn-1 lang" key="detailed"><span> Подробнее</span></button>
                             </div>
                         </div>
 
                         <div class="main__slider-item swiper-slide" style="background-image: url(/img/slider-2.jpg);">
                             <div class="wrapper__container">
                                 <div class="main__slider-info">
-                                    <div class="main__slider-title">Страховка</div>
-                                    <div class="main__slider-text">Полная страховка страховка автомобил.</div>
+                                    <div class="main__slider-title lang" key="insurance">Страховка</div>
+                                    <div class="main__slider-text lang" key="car insurance">Полная страховка автомобилей.</div>
                                 </div>
-                                <button class="main__slider-btn color__btn-2"><span> Подробнее</span></button>
+                                <button class="main__slider-btn color__btn-2 lang" key="detailed"><span> Подробнее</span></button>
                             </div>
                         </div>
 
                         <div class="main__slider-item swiper-slide" style="background-image: url(/img/slider-3.jpg);">
                             <div class="wrapper__container">
                                 <div class="main__slider-info">
-                                    <div class="main__slider-title">Бензин</div>
-                                    <div class="main__slider-text">Полный бак на любой заправке города за наш счёт.</div>
+                                    <div class="main__slider-title  lang" key="Gasoline">Бензин</div>
+                                    <div class="main__slider-text  lang" key="full tank">Полный бак на любой заправке города за наш счёт.</div>
                                 </div>
-                                <button class="main__slider-btn color__btn-3"><span> Подробнее</span></button>
+                                <button class="main__slider-btn color__btn-3 lang" key="detailed"><span> Подробнее</span></button>
                             </div>
                         </div>
 
                         <div class="main__slider-item swiper-slide" style="background-image: url(/img/slider-4.jpg);">
                             <div class="wrapper__container">
                                 <div class="main__slider-info">
-                                    <div class="main__slider-title">Обслуживание</div>
-                                    <div class="main__slider-text">Автомобиль проходит еженедельное ТО.</div>
+                                    <div class="main__slider-title  lang" key="Service">Обслуживание</div>
+                                    <div class="main__slider-text  lang" key="car passes">Автомобиль проходит еженедельное ТО.</div>
                                 </div>
-                                <button class="main__slider-btn color__btn-4"><span> Подробнее</span></button>
+                                <button class="main__slider-btn color__btn-4 lang" key="detailed"><span> Подробнее</span></button>
                             </div>
                         </div>
                     </div>
@@ -128,16 +131,16 @@
                 <div class="main__container">
                     <ul class="main__menu-link">
                         <li>
-                            <a href="#">Парковка</a>
+                            <a href="#" class=" lang" key="parking">Парковка</a>
                         </li>
                         <li>
-                            <a href="#">Страховка</a>
+                            <a href="#" class=" lang" key="insurance">Страховка</a>
                         </li>
                         <li>
-                            <a href="#">Бензин</a>
+                            <a href="#" class=" lang" key="Gasoline">Бензин</a>
                         </li>
                         <li>
-                            <a href="#">Обслуживание</a>
+                            <a href="#" class=" lang" key="Service">Обслуживание</a>
                         </li>
                         <div class="main__menu-social">
                             <a class="social" href="#">
@@ -162,8 +165,13 @@
                     </ul>
 
                 </div>
-                <div class="side-menu__lang main-menu__lang">
-                    <span>Eng</span>
+                <div class="header__lang">
+                    <div class="side-menu__lang lang-eng main-menu__lang" id="en">
+                        <span>Eng</span>
+                    </div>
+                    <div class="side-menu__lang lang-ru" id="ru">
+                        <span>Рус</span>
+                    </div>
                 </div>
             </div>
             <div class="main__menu-bg"></div>
